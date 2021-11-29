@@ -75,5 +75,13 @@
         android:title="@string/create_folder"
         android:visible="true" />
 
+    <item
+        android:id="@+id/menu_test_activity"
+        android:icon="@drawable/ic_select_all"
+        android:orderInCategory="10"
+        android:showAsAction="ifRoom"
+        android:title="@string/test_activity"
+        android:visible="true" />
+
 
 </menu>

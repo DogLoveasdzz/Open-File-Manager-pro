@@ -44,6 +44,7 @@ import android.widget.ListView;
 
 import com.michaldabski.filemanager.FileManagerApplication;
 import com.michaldabski.filemanager.R;
+import com.michaldabski.filemanager.SykTestActivity;
 import com.michaldabski.filemanager.about.AboutActivity;
 import com.michaldabski.filemanager.clipboard.Clipboard;
 import com.michaldabski.filemanager.clipboard.Clipboard.ClipboardListener;
@@ -278,9 +279,13 @@ public class FolderActivity extends Activity implements OnItemClickListener, Cli
 			case R.id.menu_about:
 				startActivity(new Intent(getApplicationContext(), AboutActivity.class));
 				return true;
+			case R.id.menu_test_activity:
+				startActivity(new Intent(getApplicationContext(), SykTestActivity.class));
+				return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
 	
 	public void showFragment(Fragment fragment)
 	{
